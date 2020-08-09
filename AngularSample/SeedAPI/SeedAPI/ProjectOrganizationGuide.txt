@@ -1,0 +1,16 @@
+
+    Web.API: This is our startup project and where endpoints are created. Here we will set up JWT(JSON web token), injection dependencies, and controllers.
+    
+    ViewModels: Here we perform conversions from the type of data that controllers will return in the responses to the front end. It is a good practice to match these classes with the front-end models.
+    
+    Interfaces: This will be helpful in implementing injection dependencies. The compelling benefit of a statically typed language is that the compiler can help verify that a contract which your code relies upon is actually met.
+    
+    Commons: All the shared behaviors and utility code will be here.
+    
+    Models: It is a good practice not to match the database directly with the front-end-facing ViewModels, so the purpose of Models is to create entity database classes independent of the front end. That will allow us in future to change our database without necessarily having an impact on our front end. It also helps when we simply want to do some refactoring.
+    
+    Maps: Here is where we map ViewModels to Models and vice-versa. This step is called between controllers and Services.
+    
+    Services: A library to store all the business logic.
+    
+    Repositories: This is the only place where we call the database.
