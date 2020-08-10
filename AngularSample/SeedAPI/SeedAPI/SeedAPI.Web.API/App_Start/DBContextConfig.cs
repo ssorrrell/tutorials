@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using SeedAPI.Interfaces;
 using SeedAPI.Models.Context;
 
 namespace SeedAPI.Web.API.App_Start

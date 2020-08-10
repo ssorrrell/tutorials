@@ -42,14 +42,22 @@ namespace SeedAPI.Web.API
             });
         }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
-
-        public void ConfigureServices(IServiceCollection services)
+        public void Configure(IApplicationBuilder app, Microsoft.Extensions.Hosting.IHostingEnvironment env, IServiceProvider svp)
         {
-            DependencyInjectionConfig.AddScope(services);
-            JwtTokenConfig.AddAuthentication(services, Configuration);
-            DBContextConfig.Initialize(services, Configuration);
-            services.AddMvc();
+
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+
+            DBContextConfig.Initialize(Configuration, env, svp);
+            app.UseCors(builder => builder
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                .AllowCredentials());
+            app.UseAuthentication();
+            app.UseMvc();
         }
     }
 }

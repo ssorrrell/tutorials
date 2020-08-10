@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SeedAPI.Models.Context
+namespace SeedAPI.ViewModels
 {
-    public interface IApplicationContext
+    public class UserViewModel
     {
     }
 }

@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SeedAPI.Models.Context
+namespace SeedAPI.Interfaces
 {
-    public interface IApplicationContext
+    public interface IUser
     {
     }
 }

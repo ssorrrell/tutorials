@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Microsoft.AspNetCore.Identity;
+using SeedAPI.Interfaces;
 
 namespace SeedAPI.Models
 {
