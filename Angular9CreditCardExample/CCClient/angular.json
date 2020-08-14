@@ -67,7 +67,8 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "CCClient:build:production"
+              "browserTarget": "CCClient:build:production",
+			  "proxyConfig": "src/proxy.conf.json"
             }
           }
         },
