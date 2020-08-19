@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "0acf7092-e6a9-49b8-8405-8cf41895818b",
+		"name": "ToDoItems2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:51623/api/ToDoItems",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:51623/api/ToDoItems"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:51623/api/ToDoItems",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ID\": \"7bb8a868-dba1-4f1a-93b7-24ebce87e243\",\r\n    \"Name\": \"abc\",\r\n    \"Notes\": \"notes2\",\r\n    \"Done\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:51623/api/ToDoItems"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:51623/api/ToDoItems",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ID\": \"7bb8a868-dba1-4f1a-93b7-24ebce87e243\",\r\n    \"Name\": \"abc updated\",\r\n    \"Notes\": \"notes2\",\r\n    \"Done\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:51623/api/ToDoItems"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:51623/api/ToDoItems",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ID\": \"7bb8a868-dba1-4f1a-93b7-24ebce87e243\",\r\n    \"Name\": \"abc updated\",\r\n    \"Notes\": \"notes2\",\r\n    \"Done\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:51623/api/ToDoItems/7bb8a868-dba1-4f1a-93b7-24ebce87e243"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
