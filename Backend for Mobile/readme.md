@@ -16,3 +16,30 @@ This tutorial demonstrates how to create backend services using ASP.NET Core MVC
 
 Xamarin Forms ToDoRest app is at:
 https://docs.microsoft.com/en-us/xamarin/xamarin-forms/data-cloud/web-services/rest
+
+Consume a RESTful Web Service
+
+    05/28/2020
+    8 minutes to read
+
+Download Sample Download the sample
+
+Integrating a web service into an application is a common scenario. This article demonstrates how to consume a RESTful web service from a Xamarin.Forms application.
+
+Representational State Transfer (REST) is an architectural style for building web services. REST requests are made over HTTP using the same HTTP verbs that web browsers use to retrieve web pages and to send data to servers. The verbs are:
+
+    GET – this operation is used to retrieve data from the web service.
+    POST – this operation is used to create a new item of data on the web service.
+    PUT – this operation is used to update an item of data on the web service.
+    PATCH – this operation is used to update an item of data on the web service by describing a set of instructions about how the item should be modified. This verb is not used in the sample application.
+    DELETE – this operation is used to delete an item of data on the web service.
+
+Web service APIs that adhere to REST are called RESTful APIs, and are defined using:
+
+    A base URI.
+    HTTP methods, such as GET, POST, PUT, PATCH, or DELETE.
+    A media type for the data, such as JavaScript Object Notation (JSON).
+
+RESTful web services typically use JSON messages to return data to the client. JSON is a text-based data-interchange format that produces compact payloads, which results in reduced bandwidth requirements when sending data. The sample application uses the open source NewtonSoft JSON.NET library to serialize and deserialize messages.
+
+The simplicity of REST has helped make it the primary method for accessing web services in mobile applications.
