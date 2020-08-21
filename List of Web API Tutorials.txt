@@ -1,0 +1,78 @@
+Angular 9 Examples
+--------------------------------------------------------------------------------------------------------------
+https://www.codeproject.com/Articles/5253861/Angular-8-9-Tutorial-Build-your-First-Web-App-with
+Angular 8/9 Tutorial: Build your First Web App with Angular
+
+https://dev.to/dileno/build-a-simple-crud-app-with-angular-8-and-asp-net-core-2-2-part-1-back-end-39e1
+https://dev.to/dileno/build-an-angular-8-app-with-rest-api-and-asp-net-core-2-2-part-2-46ap
+Build a Simple CRUD App with Angular 8 and ASP.NET Core 2.2 - part 1 - back-end 
+
+Web API Routing
+---------------------------------------------------------------------------------------------------------------
+https://docs.microsoft.com/en-us/aspnet/web-api/overview/web-api-routing-and-actions/routing-in-aspnet-web-api
+
+Routing in ASP.NET Web API
+
+    10/29/2018
+    4 minutes to read
+        +3 
+
+by Mike Wasson
+
+This article describes how ASP.NET Web API routes HTTP requests to controllers.
+
+Note
+
+If you are familiar with ASP.NET MVC, Web API routing is very similar to MVC routing. The main difference is that Web API uses the HTTP verb, not the URI path, to select the action. You can also use MVC-style routing in Web API. This article does not assume any knowledge of ASP.NET MVC.
+
+
+Web API Complex Routes
+----------------------------------------------------------------------------------------------------------------
+https://docs.microsoft.com/en-us/aspnet/web-api/overview/web-api-routing-and-actions/routing-and-action-selection
+
+Routing and Action Selection in ASP.NET Web API
+
+    12/14/2018
+    9 minutes to read
+        +4 
+
+by Mike Wasson
+
+This article describes how ASP.NET Web API routes an HTTP request to a particular action on a controller.
+
+Note
+
+For a high-level overview of routing, see Routing in ASP.NET Web API.
+
+This article looks at the details of the routing process. If you create a Web API project and find that some requests don't get routed the way you expect, hopefully this article will help.
+
+Routing has three main phases:
+
+    Matching the URI to a route template.
+    Selecting a controller.
+    Selecting an action.
+
+You can replace some parts of the process with your own custom behaviors. In this article, I describe the default behavior. At the end, I note the places where you can customize the behavior.
+
+
+Web API Complex Routes 2
+------------------------------------------------------------------------------------------------------------------
+https://docs.microsoft.com/en-us/aspnet/web-api/overview/web-api-routing-and-actions/create-a-rest-api-with-attribute-routing
+
+Create a REST API with Attribute Routing in ASP.NET Web API 2
+
+    06/26/2013
+    11 minutes to read
+        +8 
+
+by Mike Wasson
+
+Web API 2 supports a new type of routing, called attribute routing. For a general overview of attribute routing, see Attribute Routing in Web API 2. In this tutorial, you will use attribute routing to create a REST API for a collection of books. The API will support the following actions:
+Create a REST API with Attribute Routing in ASP.NET Web API 2
+Action 	Example URI
+Get a list of all books. 	/api/books
+Get a book by ID. 	/api/books/1
+Get the details of a book. 	/api/books/1/details
+Get a list of books by genre. 	/api/books/fantasy
+Get a list of books by publication date. 	/api/books/date/2013-02-16 /api/books/date/2013/02/16 (alternate form)
+Get a list of books by a particular author. 	/api/authors/1/books
